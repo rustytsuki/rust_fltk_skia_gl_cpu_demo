@@ -1,0 +1,16 @@
+[package]
+name = "rust_fltk_skia_gl_cpu_demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+force_cpu = []
+
+[dependencies]
+lazy_static = "1.4.0"
+fltk = { version = "1.3.26", features = ["enable-glwindow"] }
+tokio = {version = "1.19.2", features = ["full"]}
+skia-safe = { version = "0.58.0", features = ["gl"] }
+gl-rs = { package = "gl", version = "0.14.0" }
